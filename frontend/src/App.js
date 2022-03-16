@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import HomeScreen from "./screens/HomeScreen";
 import LoginScreen from "./screens/LoginScreen";
 import SignUpScreen from "./screens/SignUpScreen";
+import ForgotPasswordScreen from "./screens/ForgotPasswordScreen";
 
 // function App() {
 const App = () => {
@@ -28,6 +29,10 @@ const App = () => {
         }
       ></Route>
       <Route path="/login" element={<LoginScreen />}></Route>
+      <Route
+        path="/login/forgotPassword"
+        element={<ForgotPasswordScreen />}
+      ></Route>
       <Route path="/signup" element={<SignUpScreen />}></Route>
     </Routes>
   );
