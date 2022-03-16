@@ -7,7 +7,7 @@ main {
   align-items: center;
 }
 .login-background {
-  background-color: rgb(214, 197, 197);
+  background-color: rgba(65, 87, 109, 0.311);
 }
 
 .separator {
