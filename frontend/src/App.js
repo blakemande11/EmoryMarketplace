@@ -17,7 +17,6 @@ const App = () => {
         element={
           <>
             <Header />
-            <br />
             <main>
               <Container>
                 <h1>Welcome To Death to Barnes and Nobles</h1>

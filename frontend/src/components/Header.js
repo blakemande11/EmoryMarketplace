@@ -6,7 +6,6 @@ const Header = () => {
   return (
     <header>
       <>
-        <br />
         <Navbar bg="primary" variant="dark" collapseOnSEelect>
           <Container>
             <LinkContainer to="/">
