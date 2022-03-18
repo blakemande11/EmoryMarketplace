@@ -1,15 +1,11 @@
 import React, { Component } from "react";
-import Login from "../components/Login";
-import Header from "../components/Header";
+import Login from "../components/Login/Login";
 import Footer from "../components/Footer";
 
 const LoginScreen = () => {
   return (
-    <div class="center">
-      <Header />
-      <div>
-        <h1>Login Screen</h1>
-      </div>
+    <div>
+      <h1>Login Screen</h1>
       <div>
         <Login />
       </div>

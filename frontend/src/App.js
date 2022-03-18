@@ -27,12 +27,33 @@ const App = () => {
           </>
         }
       ></Route>
-      <Route path="/login" element={<LoginScreen />}></Route>
+      <Route
+        path="/login"
+        element={
+          <>
+            <Header />
+            <LoginScreen />
+          </>
+        }
+      ></Route>
       <Route
         path="/login/forgotPassword"
-        element={<ForgotPasswordScreen />}
+        element={
+          <>
+            <Header />
+            <ForgotPasswordScreen />
+          </>
+        }
       ></Route>
-      <Route path="/signup" element={<SignUpScreen />}></Route>
+      <Route
+        path="/signup"
+        element={
+          <>
+            <Header />
+            <SignUpScreen />
+          </>
+        }
+      ></Route>
     </Routes>
   );
 };
