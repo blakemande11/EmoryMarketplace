@@ -4,7 +4,6 @@ import ProfilePage from "../components/ProfilePage/ProfilePage";
 const ProfileScreen = () => {
   return (
     <>
-      <h2>Profile Page</h2>
       <ProfilePage />
     </>
   );
