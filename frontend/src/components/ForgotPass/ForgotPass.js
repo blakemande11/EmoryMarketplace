@@ -1,7 +1,7 @@
 import Reactm, { Component } from "react";
 import { LinkContainer } from "react-router-bootstrap";
 import { Link } from "react-router-dom";
-import "../index.css";
+import "./ForgotPass.css";
 //handleSubmit = () => {};
 class ForgotPass extends Component {
   render() {

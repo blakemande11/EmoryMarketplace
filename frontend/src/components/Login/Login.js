@@ -1,4 +1,4 @@
-import Reactm, { Component } from "react";
+import React, { Component } from "react";
 import Image from "react-bootstrap/Image";
 import { LinkContainer } from "react-router-bootstrap";
 import { Link } from "react-router-dom";

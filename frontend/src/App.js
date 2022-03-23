@@ -7,6 +7,7 @@ import HomeScreen from "./screens/HomeScreen";
 import LoginScreen from "./screens/LoginScreen";
 import SignUpScreen from "./screens/SignUpScreen";
 import ForgotPasswordScreen from "./screens/ForgotPasswordScreen";
+import ChatScreen from "./screens/ChatScreen";
 
 // function App() {
 const App = () => {
@@ -33,6 +34,15 @@ const App = () => {
           <>
             <Header />
             <LoginScreen />
+          </>
+        }
+      ></Route>
+      <Route
+        path="/chat"
+        element={
+          <>
+            <Header />
+            <ChatScreen />
           </>
         }
       ></Route>

@@ -15,11 +15,11 @@ const Header = () => {
               <LinkContainer to="/">
                 <Nav.Link href="/">Home</Nav.Link>
               </LinkContainer>
-              {/* <LinkContainer to="/cart"> */}
-              {/* <Nav.Link href="/cart">
-                Cart <i className="fas fa-shopping-cart"></i>
-              </Nav.Link> */}
-              {/* </LinkContainer> */}
+              <LinkContainer to="/chat">
+                <Nav.Link href="/chat">
+                  Chat <i className="fas fa-solid fa-message"></i>
+                </Nav.Link>
+              </LinkContainer>
               <LinkContainer to="/login">
                 <Nav.Link>
                   Login <i className="fas fa-user"></i>
