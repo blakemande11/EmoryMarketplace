@@ -8,6 +8,7 @@ import LoginScreen from "./screens/LoginScreen";
 import SignUpScreen from "./screens/SignUpScreen";
 import ForgotPasswordScreen from "./screens/ForgotPasswordScreen";
 import ChatScreen from "./screens/ChatScreen";
+import ProfileScreen from "./screens/ProfileScreen";
 
 // function App() {
 const App = () => {
@@ -43,6 +44,15 @@ const App = () => {
           <>
             <Header />
             <ChatScreen />
+          </>
+        }
+      ></Route>
+      <Route
+        path="/Profile"
+        element={
+          <>
+            <Header />
+            <ProfileScreen />
           </>
         }
       ></Route>
