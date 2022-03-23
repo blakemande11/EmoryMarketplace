@@ -1,0 +1,24 @@
+{
+  "name": "emorymarketplace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hgseo16/EmoryMarketplace.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hgseo16/EmoryMarketplace/issues"
+  },
+  "homepage": "https://github.com/hgseo16/EmoryMarketplace#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
