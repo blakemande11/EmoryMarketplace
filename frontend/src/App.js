@@ -9,6 +9,7 @@ import SignUpScreen from "./screens/SignUpScreen";
 import ForgotPasswordScreen from "./screens/ForgotPasswordScreen";
 import ChatScreen from "./screens/ChatScreen";
 import ProfileScreen from "./screens/ProfileScreen";
+import ItemScreen from "./screens/ItemScreen";
 
 // function App() {
 const App = () => {
@@ -26,6 +27,15 @@ const App = () => {
               </Container>
             </main>
             <Footer />
+          </>
+        }
+      ></Route>
+      <Route
+        path="/items"
+        element={
+          <>
+            <Header />
+            <ItemScreen />
           </>
         }
       ></Route>
