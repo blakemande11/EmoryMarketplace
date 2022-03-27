@@ -15,6 +15,11 @@ const Header = () => {
               <LinkContainer to="/">
                 <Nav.Link href="/">Home</Nav.Link>
               </LinkContainer>
+              <LinkContainer to="/items">
+                <Nav.Link href="/items">
+                  Items <i className="fa-solid fa-book"></i>
+                </Nav.Link>
+              </LinkContainer>
               <LinkContainer to="/chat">
                 <Nav.Link href="/chat">
                   Chat <i className="fas fa-solid fa-message"></i>
