@@ -1,10 +1,13 @@
 import express from "express";
+import dotenv from "dotenv";
 import products from "./data/products.js";
+
+dotenv.config();
 
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Hi World");
+  res.send("Hi  ");
 });
 
 app.get("/api/products", (req, res) => {
@@ -16,4 +19,9 @@ app.get("/api/products/:id", (req, res) => {
   res.json(product);
 });
 
-app.listen(3001, console.log("Server on port 3001"));
+const PORT = process.env.PORT || 3001;
+
+app.listen(
+  PORT,
+  console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`)
+);
