@@ -20,7 +20,7 @@ const App = () => {
         path="/"
         element={
           <>
-            <HeaderSignedIn />
+            <Header />
             <main>
               <Container>
                 <h1>Welcome To Death to Barnes and Nobles</h1>
@@ -63,7 +63,7 @@ const App = () => {
         path="/Profile"
         element={
           <>
-            <HeaderSignedIn />
+            <Header />
             <ProfileScreen />
           </>
         }
