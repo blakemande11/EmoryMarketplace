@@ -10,6 +10,7 @@ import ForgotPasswordScreen from "./screens/ForgotPasswordScreen";
 import ChatScreen from "./screens/ChatScreen";
 import ProfileScreen from "./screens/ProfileScreen";
 import ItemScreen from "./screens/ItemScreen";
+import HeaderSignedIn from "./components/HeaderSignedIn";
 
 // function App() {
 const App = () => {
@@ -19,7 +20,7 @@ const App = () => {
         path="/"
         element={
           <>
-            <Header />
+            <HeaderSignedIn />
             <main>
               <Container>
                 <h1>Welcome To Death to Barnes and Nobles</h1>
@@ -31,7 +32,8 @@ const App = () => {
         }
       ></Route>
       <Route
-        path="/items"
+        //not sure how to change this
+        path="/product/2"
         element={
           <>
             <Header />
@@ -61,7 +63,7 @@ const App = () => {
         path="/Profile"
         element={
           <>
-            <Header />
+            <HeaderSignedIn />
             <ProfileScreen />
           </>
         }
