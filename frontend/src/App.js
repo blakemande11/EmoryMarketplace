@@ -23,7 +23,7 @@ const App = () => {
             <Header />
             <main>
               <Container>
-                <h1>Welcome To Death to Barnes and Nobles</h1>
+                <h1>Welcome To Emory Exchange</h1>
                 <HomeScreen />
               </Container>
             </main>
