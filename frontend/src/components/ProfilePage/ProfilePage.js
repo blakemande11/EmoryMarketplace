@@ -154,9 +154,9 @@ const ProfilePage = () => {
           </ul>
         </div>
 
-        <div className="card w-75 h-10">
+        <div className="card w-50 h-10">
           <h2 className="card-header bg-info text-white mb-2">Listings</h2>
-          <div className="card-body ">
+          <div className="card-body   h-10">
             {products.map((product) => (
               <Product product={product} />
             ))}

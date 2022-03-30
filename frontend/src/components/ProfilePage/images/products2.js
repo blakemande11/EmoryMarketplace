@@ -1,16 +1,15 @@
 const products = [
   {
     _id: "1",
-    name: "Stainless Steel Frying Pan",
-    image: "/images/fryingpan.avif",
-    description: "Really nice frying pan",
-    category: "Cooking",
-    ISBN: 982866917,
-    Author: "Hillary Louise Johnson",
-    price: 2.99,
+    name: "Anthropolgy: What Does it Mean to Be Human?",
+    image: "/images/anthro.jpg",
+    description: "Some markings on it, overall good",
+    category: "Anthropology",
+    price: 20.0,
     rating: 4.1,
     numReviews: 12,
   },
+
   {
     _id: "2",
     name: "Algorithms fourth edition by Robert Sedgewick, Kevin Wayne",
