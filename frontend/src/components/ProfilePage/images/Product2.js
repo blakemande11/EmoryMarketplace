@@ -18,16 +18,6 @@ const Product = ({ product }) => {
             </Link>
           </div>
 
-          {/* <Card.Body>
-        <Link to={`/product/${product._id}`}>
-          <strong>{product.name}</strong>
-        </Link>
-        <Card.Text as="div" className="my-3">
-          <div>Seller Rating: {product.rating}</div>
-          <div>{product.numReviews} reviews</div>
-        </Card.Text>
-        <Card.Text>${product.price}</Card.Text>
-      </Card.Body> */}
           <div className="col-sm-6">
             <h4>
               <Link to={`/product/${product._id}`}>
