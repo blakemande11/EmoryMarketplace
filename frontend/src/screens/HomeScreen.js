@@ -15,6 +15,18 @@ const HomeScreen = () => {
   }, []);
   return (
     <>
+      <div className="col-12 d-flex align-items-center">
+        <form className="input-group">
+          <input
+            type="search"
+            className="form-control rounded search"
+            placeholder="Search"
+          />
+          <button type="submit" className="search-button">
+            search
+          </button>
+        </form>
+      </div>
       <h2>Latest Products</h2>
 
       <Row sm={1} md={2} lg={4} xl={5}>

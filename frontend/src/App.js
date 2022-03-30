@@ -32,8 +32,7 @@ const App = () => {
         }
       ></Route>
       <Route
-        //not sure how to change this
-        path="/product/2"
+        path="/product/:id"
         element={
           <>
             <Header />
