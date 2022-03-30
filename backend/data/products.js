@@ -22,12 +22,12 @@ const products = [
   {
     _id: "3",
     name: "Stainless Steel Frying Pan",
-    image: "/images/fryingpan.avif",
-    description: "Really nice frying pan",
+    image: "/images/airpod.avif",
+    description: "Airpod",
     category: "Cooking",
-    price: 2.99,
-    rating: 4.1,
-    numReviews: 12,
+    price: 299.99,
+    rating: 1.1,
+    numReviews: 521,
   },
   {
     _id: "4",
