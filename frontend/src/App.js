@@ -69,15 +69,6 @@ const App = () => {
         }
       ></Route>
       <Route
-        path = "/SellPage"
-        element = {
-          <>
-            <Header />
-            <SellPageScreen />
-          </>
-        }>
-      </Route>
-      <Route
         path="/login/forgotPassword"
         element={
           <>
