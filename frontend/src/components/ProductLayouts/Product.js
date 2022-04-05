@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Card } from "react-bootstrap";
-import "./ProfilePage/ProfilePage.css";
+import "./Product.css";
 
 const Product = ({ product }) => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
-import Header from "./components/Header";
+import Header from "./components/Headers/Header";
 import Footer from "./components/Footer";
 import HomeScreen from "./screens/HomeScreen";
 import LoginScreen from "./screens/LoginScreen";
@@ -10,7 +10,7 @@ import ForgotPasswordScreen from "./screens/ForgotPasswordScreen";
 import ChatScreen from "./screens/ChatScreen";
 import ProfileScreen from "./screens/ProfileScreen";
 import ItemScreen from "./screens/ItemScreen";
-import HeaderSignedIn from "./components/HeaderSignedIn";
+import HeaderSignedIn from "./components/Headers/HeaderSignedIn";
 import SellingScreen from "./screens/SellingScreen";
 
 // function App() {
