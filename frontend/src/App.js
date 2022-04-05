@@ -11,6 +11,7 @@ import ChatScreen from "./screens/ChatScreen";
 import ProfileScreen from "./screens/ProfileScreen";
 import ItemScreen from "./screens/ItemScreen";
 import HeaderSignedIn from "./components/HeaderSignedIn";
+import SellingScreen from "./screens/SellingScreen";
 
 // function App() {
 const App = () => {
@@ -73,6 +74,15 @@ const App = () => {
           <>
             <Header />
             <ForgotPasswordScreen />
+          </>
+        }
+      ></Route>
+      <Route
+        path="/sell"
+        element={
+          <>
+            <Header />
+            <SellingScreen />
           </>
         }
       ></Route>
