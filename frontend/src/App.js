@@ -10,6 +10,8 @@ import ForgotPasswordScreen from "./screens/ForgotPasswordScreen";
 import ChatScreen from "./screens/ChatScreen";
 import ProfileScreen from "./screens/ProfileScreen";
 import ItemScreen from "./screens/ItemScreen";
+import SellPageScreen from "./screens/SellPageScreen";
+
 import HeaderSignedIn from "./components/HeaderSignedIn";
 
 // function App() {
@@ -67,6 +69,15 @@ const App = () => {
           </>
         }
       ></Route>
+      <Route
+        path = "/SellPage"
+        element = {
+          <>
+            <Header />
+            <SellPageScreen />
+          </>
+        }>
+      </Route>
       <Route
         path="/login/forgotPassword"
         element={
