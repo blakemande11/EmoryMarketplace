@@ -55,7 +55,7 @@ const ItemPage = () => {
         </p>
       </h5>
 
-      <Container fluid>
+      <Container>
         <Row className="item-bar">
           <Col className="bar-col1">
             <img
@@ -68,7 +68,7 @@ const ItemPage = () => {
               <b> {product.seller}</b>
             </h5>
           </Col>
-          <Col className="bar-col1">
+          <Col className="bar-col2">
             <h3 className="m-5">
               <b>${product.price}</b>
             </h3>

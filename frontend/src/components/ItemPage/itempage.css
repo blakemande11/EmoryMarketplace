@@ -33,7 +33,7 @@
 }
 
 .item-bar {
-  background-color: #fff;
+  display: flex;
   padding-left: 30px;
   padding-right: 30px;
   vertical-align: center;
@@ -42,10 +42,12 @@
 .bar-col1 {
   display: flex;
   vertical-align: center;
-  align-items: center;
+  padding-left: 90px;
+  text-align: left;
 }
-.bar-col1 {
+
+.bar-col2 {
   display: flex;
-  vertical-align: center;
   align-items: center;
+  padding-left: 175px;
 }
