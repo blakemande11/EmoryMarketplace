@@ -1,12 +1,13 @@
 import React from "react";
 import { LinkContainer } from "react-router-bootstrap";
 import { Container, Navbar, Nav } from "react-bootstrap";
+import './Header.css'; 
 
 const Header = () => {
   return (
     <header>
       <>
-        <Navbar bg="primary" variant="dark" collapseOnSEelect>
+        <Navbar className = "header" variant = "dark" collapseOnSEelect>
           <Container>
             <LinkContainer to="/">
               <Navbar.Brand>Emory Exchange</Navbar.Brand>
