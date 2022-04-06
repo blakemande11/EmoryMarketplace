@@ -12,6 +12,7 @@ import ProfileScreen from "./screens/ProfileScreen";
 import ItemScreen from "./screens/ItemScreen";
 import HeaderSignedIn from "./components/Headers/HeaderSignedIn";
 import SellingScreen from "./screens/SellingScreen";
+import ProfilePage from "./components/ProfilePage/ProfilePage";
 
 // function App() {
 const App = () => {
@@ -38,6 +39,15 @@ const App = () => {
           <>
             <Header />
             <ItemScreen />
+          </>
+        }
+      ></Route>
+      <Route
+        path="/:username"
+        element={
+          <>
+            <Header />
+            <ProfilePage />
           </>
         }
       ></Route>
