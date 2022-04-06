@@ -12,7 +12,7 @@ import axios from "axios";
 
 const ProfilePage = () => {
   const { username } = useParams();
-  const [users, product, setProducts, setUser] = useState({});
+  const [users, setUser] = useState({});
 
   useEffect(() => {
     const fetchuser = async () => {
