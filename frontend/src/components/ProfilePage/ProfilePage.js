@@ -1,27 +1,26 @@
-import React, { Component } from "react";
 import ReactRoundedImage from "react-rounded-image";
-import MyPhoto from "./images/meowrick.jpg";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
 import "./ProfilePage.css";
-import Product from "./images/Product2";
-import products from "./images/products2";
+import Product from "./ProfilePageListing";
 import Rating1 from "../userStars/userStars";
 import axios from "axios";
 
 const ProfilePage = () => {
   const { username } = useParams();
   const [users, setUser] = useState({});
+  const [listingsArray, setListingArray] = useState([]);
 
   useEffect(() => {
     const fetchuser = async () => {
       const { data } = await axios.get(`/api/users/${username}`);
       setUser(data);
+      setListingArray(data.listings);
     };
     fetchuser();
   }, []);
-
+  var check = Array.isArray(users.listing);
   return (
     <>
       <div className="div-wrapper2">
@@ -29,19 +28,22 @@ const ProfilePage = () => {
       </div>
       <div className="div-wrapper">
         <div className="card mb-3 div-row w-50 ">
-          <ReactRoundedImage
-            image={users.image}
-            roundedColor="#321124"
-            imageWidth="150"
-            imageHeight="150"
-            roundedSize="13"
-            borderRadius="70"
-          />
-          <h2 className="m-2">{users.name}</h2>
-          <h5 className="card-title text-muted m-2">
-            <i className="fas fa-user"></i> @{users.username}
+          <div className="wrapper">
+            <ReactRoundedImage
+              className="wrapper"
+              image={users.image}
+              roundedColor="#321124"
+              imageWidth="150"
+              imageHeight="150"
+              roundedSize="13"
+              borderRadius="70"
+            />
+          </div>
+          <h2 className="m-2 wrapper">{users.name}</h2>
+          <h5 className="card-title text-muted m-2 wrapper">
+            <i className="fas fa-user wrapper"></i> @{users.username}
           </h5>
-          <div className="mx-2">
+          <div className="mx-2 wrapper">
             <Rating1
               rating={users.rating}
               numReview={` ${users.reviews} reviews`}
@@ -62,30 +64,35 @@ const ProfilePage = () => {
               <i className="fa-solid fa-envelope"></i> {users.email}
             </h7>
           </div>
+
           <h4 className="card-header bg-info text-white">About Me</h4>
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item">
+              <h5>
+                <strong>Major: </strong>
+                {users.major}
+              </h5>
+            </li>
+            <li className="list-group-item">
+              <h5>
+                <strong>Year: </strong>
+                {users.year}
+              </h5>
+            </li>
+          </ul>
           <div className="card-body">
             <h4 className="-title">
               <strong>Bio:</strong>
             </h4>
             <p className="card-body">{users.bio}</p>
           </div>
-          <ul className="list-group list-group-flush">
-            <li className="list-group-item">
-              <strong>Major: </strong>
-              {users.major}
-            </li>
-            <li className="list-group-item">
-              <strong>Year: </strong>
-              {users.year}
-            </li>
-          </ul>
         </div>
 
         <div className="card w-50 h-10">
           <h2 className="card-header bg-info text-white mb-2">Listings</h2>
-          <div className="card-body   h-10">
-            {products.map((product) => (
-              <Product product={product} />
+          <div className="card-body  h-10">
+            {listingsArray.map((list) => (
+              <Product productNumber={list}></Product>
             ))}
           </div>
         </div>

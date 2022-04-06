@@ -12,7 +12,7 @@ const users = [
     rating: 4,
     reviews: 3,
     password: "password",
-    listings: ["2"],
+    listings: [2],
   },
   {
     _id: 62437660933,
@@ -27,7 +27,7 @@ const users = [
     rating: 5,
     reviews: 3,
     password: "password",
-    listings: ["1"],
+    listings: [1],
   },
   {
     _id: 62437660935,
@@ -42,7 +42,7 @@ const users = [
     rating: 5,
     reviews: 10,
     password: "password",
-    listings: ["3"],
+    listings: [3],
   },
   {
     _id: 62437660934,
@@ -57,7 +57,7 @@ const users = [
     rating: 2,
     reviews: 3,
     password: "password",
-    listings: ["4"],
+    listings: [4],
   },
   {
     _id: 62437660935,
@@ -72,7 +72,7 @@ const users = [
     rating: 5,
     reviews: 2,
     password: "password",
-    listings: ["6", "8"],
+    listings: [6, 8],
   },
   {
     _id: 62437660937,
@@ -87,7 +87,7 @@ const users = [
     rating: 5,
     reviews: 3,
     password: "password",
-    listings: ["7"],
+    listings: [7],
   },
   {
     _id: 62437660936,
@@ -102,7 +102,7 @@ const users = [
     rating: 2.6,
     reviews: 3,
     password: "password",
-    listings: ["9"],
+    listings: [9],
   },
 
   {
@@ -118,7 +118,7 @@ const users = [
     rating: 5,
     reviews: 3,
     password: "password",
-    listings: ["10"],
+    listings: [10],
   },
   {
     _id: 62437660910,
@@ -133,7 +133,7 @@ const users = [
     rating: 5,
     reviews: 8,
     password: "password",
-    listings: ["5"],
+    listings: [5],
   },
 ];
 export default users;
