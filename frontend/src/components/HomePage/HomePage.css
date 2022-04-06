@@ -5,3 +5,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.popbg {
+  background-color: #c1e1a7;
+}
